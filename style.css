@@ -9,8 +9,8 @@
     "top"
     "hero"
     "info"
-    "recommendation"
     "callToAction"
+    "recommendation"
     "footer";
 }
 .top {
@@ -20,6 +20,7 @@
   display: flex;
   background-color: white;
   height: 92px;
+  filter: drop-shadow(0px 1px 14px rgba(80, 80, 80, 0.1));
   justify-content: space-between;
   align-items: center;
 }
@@ -53,7 +54,7 @@
   padding: 8px 24px;
   background-color: rgb(76, 100, 255);
   color: white;
-  border: none;
+  border: solid 1px rgb(76, 100, 255);
   border-radius: 20px;
   font-size: 16px;
   font-size: large;
@@ -64,7 +65,8 @@
 }
 
 .apply-button:hover {
-  background-color: rgba(0, 86, 179, 0.7);
+  background-color: white;
+  color: rgb(76, 100, 255);
 }
 
 .hero {
@@ -95,7 +97,7 @@
   display: grid;
   background-color: rgb(248, 249, 249);
   grid-template-columns: repeat(2, 1fr);
-  min-height: 700px;
+  min-height: 750px;
 }
 .info-box1 {
   display: flex;
@@ -113,18 +115,21 @@
   margin-bottom: 20px;
   font-weight: 500;
   font-family: "Roboto Condensed", sans-serif;
+  color: rgb(43, 47, 47);
 }
 .info-box2 h2 {
   margin-bottom: 30px;
   font-size: 40px;
   font-weight: 600;
   font-family: "Roboto Condensed", sans-serif;
+  color: rgb(43, 47, 47);
 }
 .info-box2 p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 60px;
+  color: rgb(43, 47, 47);
 }
 .info-apply {
   padding: 12px 24px;
@@ -177,6 +182,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 35px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+  color: rgb(43, 47, 47);
+  margin-top: 80px;
 }
 
 .recommendation {
@@ -184,23 +194,19 @@
   grid-template-columns: repeat(3, 1fr);
   max-width: 100%;
   min-height: 700px;
-  gap: 40px;
+  justify-items: center;
+  align-items: flex-start;
 }
 
 .recommendation-box {
   display: flex;
+  justify-content: center;
   align-items: center;
-
   padding-top: 80px;
   flex-direction: column;
+  width: 100%;
+  max-width: 400px;
   padding-bottom: 100px;
-}
-.recommendation-container h2 {
-  font-size: 35px;
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 500;
-  color: rgb(43, 47, 47);
-  margin-top: 80px;
 }
 
 .recommendation-box h3 {
@@ -235,9 +241,9 @@
   color: white;
 }
 .callToAction-box h3 {
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Roboto Condensed", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 
@@ -254,7 +260,7 @@
   margin-bottom: 50px;
 }
 .cta-button-how {
-  padding: 12px 24px;
+  padding: 14px 24px;
   border-color: white;
   color: white;
   border: solid 1px;
@@ -263,6 +269,7 @@
   font-size: large;
   text-decoration: none;
   font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
   margin-right: 15px;
 }
 .cta-button-how:hover {
@@ -270,7 +277,7 @@
   color: rgb(76, 100, 255);
 }
 .cta-button-apply {
-  padding: 12px 24px;
+  padding: 14px 24px;
   border-color: #2b2f2f;
   background-color: white;
   color: rgb(76, 100, 255);
@@ -278,6 +285,7 @@
   border-radius: 25px;
   font-size: 16px;
   font-size: large;
+  font-weight: 500;
   text-decoration: none;
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -296,4 +304,96 @@
   grid-template-columns: repeat(3, 1fr);
   background-color: rgb(248, 249, 249);
   min-height: 400px;
+}
+.footer-box-one {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer-box-two {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 50px;
+}
+.footer-box-one h2 {
+  font-size: 30px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  margin-bottom: 50px;
+  color: rgb(43, 47, 47);
+}
+.footer-apply-btn {
+  padding: 12px 40px;
+  border-color: #2b2f2f;
+  background-color: rgba(0, 0, 0, 0);
+  color: #2b2f2f;
+  border: solid 1px rgb(43, 47, 47);
+  border-radius: 25px;
+  font-size: 16px;
+  font-size: large;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.footer-apply-btn:hover {
+  background-color: #2b2f2f;
+  color: white;
+}
+.footer-image {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  background-image: url(./pictures/chas_footer_background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact-div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.contact-div a {
+  color: #2b2f2f;
+  font-size: 16px;
+  font-size: large;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.contact-div h3 {
+  color: #2b2f2f;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+}
+.contact-div p {
+  color: #2b2f2f;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+}
+.footer-box-three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+.footer-box-three h3 {
+  color: #2b2f2f;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+}
+
+.footer-logo {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.footer-icons img {
+  margin: 10px;
 }
