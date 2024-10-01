@@ -395,5 +395,8 @@
   margin-bottom: 20px;
 }
 .footer-icons img {
-  margin: 10px;
+  margin: 8px;
+}
+.footer-icons a {
+  text-decoration: none;
 }
