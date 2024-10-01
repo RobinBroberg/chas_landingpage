@@ -251,6 +251,39 @@
 .callToAction-box p {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+  margin-bottom: 50px;
+}
+.cta-button-how {
+  padding: 12px 24px;
+  border-color: white;
+  color: white;
+  border: solid 1px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-size: large;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-right: 15px;
+}
+.cta-button-how:hover {
+  background-color: white;
+  color: rgb(76, 100, 255);
+}
+.cta-button-apply {
+  padding: 12px 24px;
+  border-color: #2b2f2f;
+  background-color: white;
+  color: rgb(76, 100, 255);
+  border: solid 1px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-size: large;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.cta-button-apply:hover {
+  background-color: rgb(76, 100, 255);
+  color: white;
 }
 .callToAction-box-video {
   height: 600px;
@@ -258,7 +291,9 @@
   margin-right: 100px;
 }
 .footer {
+  display: grid;
   grid-area: footer;
+  grid-template-columns: repeat(3, 1fr);
   background-color: rgb(248, 249, 249);
   min-height: 400px;
 }
